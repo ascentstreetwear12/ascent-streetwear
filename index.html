@@ -6,201 +6,140 @@
 
 <title>ASCENT Streetwear</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Montserrat,sans-serif;
-}
-
-body{
-background:#080808;
-color:white;
-}
-
-header{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
-url("https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1600&q=80");
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-size:70px;
-font-weight:900;
-letter-spacing:8px;
-}
-
-.hero h2{
-color:#ff2a2a;
-font-size:24px;
-margin-top:15px;
-letter-spacing:5px;
-}
-
-.hero p{
-margin-top:15px;
-font-size:18px;
-color:#ddd;
-}
-
-.btn{
-display:inline-block;
-margin-top:35px;
-padding:15px 40px;
-background:#ff2a2a;
-color:white;
-text-decoration:none;
-font-weight:bold;
-border-radius:40px;
-transition:.3s;
-}
-
-.btn:hover{
-background:white;
-color:black;
-}
-
-section{
-padding:80px 10%;
-}
-
-.title{
-text-align:center;
-font-size:40px;
-margin-bottom:50px;
-font-weight:800;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.card{
-background:#151515;
-border-radius:15px;
-overflow:hidden;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card img{
-width:100%;
-display:block;
-}
-
-.card h3{
-padding:20px;
-text-align:center;
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:25px;
-text-align:center;
-}
-
-.feature{
-background:#151515;
-padding:35px;
-border-radius:15px;
-}
-
-.feature h3{
-margin-bottom:10px;
-color:#ff2a2a;
-}
-
-footer{
-background:black;
-padding:40px;
-text-align:center;
-color:#aaa;
-}
-
-</style>
-
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
+<nav>
 
-<div class="hero">
+<div class="logo">
 
-<h1>ASCENT</h1>
+<img src="images/logo.png" alt="ASCENT Logo">
 
-<h2>FROM GROUND UP.</h2>
-
-<p>Rise Above.</p>
-
-<a href="#" class="btn">SHOP NOW</a>
+<h2>ASCENT</h2>
 
 </div>
 
-</header>
+<ul>
 
-<section>
+<li><a href="#home">Home</a></li>
 
-<h2 class="title">FIRST DROP</h2>
+<li><a href="#collection">Collection</a></li>
 
-<div class="grid">
+<li><a href="#story">Story</a></li>
 
-<div class="card">
-<img src="https://placehold.co/600x700/111111/ffffff?text=Front+Design">
-<h3>Front Design</h3>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>RISE ABOVE.</h1>
+
+<p>Premium Streetwear for those building themselves from the ground up.</p>
+
+<a href="#collection" class="btn">SHOP THE DROP</a>
+
 </div>
 
-<div class="card">
-<img src="https://placehold.co/600x700/111111/ffffff?text=Back+Design">
-<h3>Back Design</h3>
+</section>
+
+<section class="collection" id="collection">
+
+<h2>DROP 001</h2>
+
+<p class="subtitle">FROM GROUND UP</p>
+
+<div class="product">
+
+<div class="product-image">
+
+<img src="images/design1.jpg" alt="ASCENT Shirt">
+
+</div>
+
+<div class="product-info">
+
+<h3>ASCENT "FROM GROUND UP"</h3>
+
+<p>
+
+A premium oversized streetwear tee built for dreamers,
+creators and hustlers.
+
+Minimal in front.
+
+Bold on the back.
+
+</p>
+
+<h4>Available Sizes</h4>
+
+<div class="sizes">
+
+<span>S</span>
+
+<span>M</span>
+
+<span>L</span>
+
+<span>XL</span>
+
+</div>
+
+<a href="#" class="buy-btn">Order via Facebook</a>
+
 </div>
 
 </div>
 
 </section>
 
-<section>
+<section class="story" id="story">
 
-<h2 class="title">WHY ASCENT?</h2>
+<h2>OUR STORY</h2>
 
-<div class="features">
+<p>
 
-<div class="feature">
-<h3>Premium Quality</h3>
-<p>Made to last.</p>
-</div>
+ASCENT isn't just clothing.
 
-<div class="feature">
-<h3>Comfort Fit</h3>
-<p>Everyday streetwear.</p>
-</div>
+It's a reminder that everyone starts somewhere.
 
-<div class="feature">
-<h3>Limited Release</h3>
-<p>Exclusive drops only.</p>
-</div>
+Every shirt represents progress.
 
-<div class="feature">
-<h3>Nationwide Shipping</h3>
-<p>Available across the Philippines.</p>
-</div>
+Every drop represents growth.
+
+Rise Above.
+
+</p>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>JOIN THE MOVEMENT</h2>
+
+<p>Follow ASCENT on social media.</p>
+
+<div class="socials">
+
+<a href="#">Facebook</a>
+
+<a href="#">Instagram</a>
+
+<a href="#">TikTok</a>
 
 </div>
 
@@ -208,13 +147,11 @@ color:#aaa;
 
 <footer>
 
-<h2>ASCENT STREETWEAR</h2>
-
-<p>More Than Clothing.</p>
-
-<p>Rise Above.</p>
+<p>© 2026 ASCENT Streetwear.</p>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
